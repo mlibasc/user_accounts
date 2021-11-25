@@ -28,5 +28,4 @@ public class StudentController {
     public void updateStudent(@PathVariable("id") long id, @Valid@NotNull@RequestBody Student student){
         studentImpl.updateStudent(id, student.getFirstname(), student.getLastname());
     }
-
 }
